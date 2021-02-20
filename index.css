@@ -7,6 +7,7 @@ body{
     background-size: cover;
     background-attachment: fixed; 
     background-repeat: no-repeat;
+    flex-flow: wrap;
 }
 
 #btn{
@@ -139,6 +140,9 @@ header{
 
 a{
     margin-bottom: 60px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
 }
 #btnbox {
     display: flex;

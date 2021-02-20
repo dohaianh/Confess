@@ -2,7 +2,6 @@ var yesbtn = document.getElementById("yesBut");
 yesbtn.onclick = function(e){
     let x = e.clientX - e.target.offsetLeft;
     let y = e.clientY - e.target.offsetTop;
-    console.log(x, y)
     let ripples = document.createElement("span");
     ripples.id = "ripples"
     ripples.style.left = x + "px";
@@ -11,7 +10,7 @@ yesbtn.onclick = function(e){
     setTimeout(()=>{
         ripples.remove()
     },500);
-    // document.getElementById("modalbox").style.display = "block"
+    document.getElementById("modalbox").style.display = "block"
 };
 
 document.getElementById("X").onclick = function(){
@@ -28,4 +27,7 @@ function Move(){
 nobtn.addEventListener("mousemove" , function(){
     Move();
 })
-
+var a = document.getElementsByClassName("a");
+if (window.innerWidth < 600){
+    a.style.fontSize = "10px";
+}
