@@ -36,6 +36,9 @@ var a = document.getElementsByClassName("a");
 var b = document.getElementsByClassName("b");
 console.log(a, b)
 if (window.innerWidth < 600){
+    document.getElementById("modal").style.width = "95%";
+    document.getElementById("modal").style.left = "10px";
+    document.getElementById("yesBut").style.marginRight = "30px";
     for (var i=0; i < 2; i++){
         a[i].style.fontSize = "20px";
         b[i].style.fontSize = "10px";
