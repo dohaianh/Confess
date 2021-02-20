@@ -1,0 +1,146 @@
+
+
+body{
+    /* width: 100%;
+    height: 70vh; */
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2020/05/06/singing-in-sunset-wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+#btn{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:  100%;
+    height: 100vh;
+    position: relative;
+}
+
+#modalbox{
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#modal{
+    background-color: #f0cf62;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+    left: 25%;
+    top: 25%;   
+    border-radius: 20px;             
+}
+
+#X{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background-color: rgb(233, 68, 68);
+    width: 21px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3.5px;
+    color: #ffffff;
+}
+
+
+#noBut {
+    top: -10%;
+    padding: 12px 36px;
+    transition: transform .1s ease-in;
+    background-image: linear-gradient(to right, rgb(45, 129, 255), rgb(94, 169, 255), rgb(79, 244, 250));
+    cursor: pointer;
+    font-size: 27px;
+    border-radius: 200px;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+}
+
+#yesBut {
+    top: -10%;
+    background-image: linear-gradient(to right, rgb(174, 0, 255),rgb(224, 61, 230),rgb(255, 136, 201));
+    font-size: 27px;
+    border-radius: 200px;
+    cursor: pointer;
+    margin-right: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 12px 66px;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+#ripples {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    animation: animate 1s linear infinite;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 1000px;
+        height: 1000px;
+    }
+}
+
+#image {
+    width: 85%;
+    height: 70%;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e7781e25-3bf5-4185-aad7-ec93d0b5e1b0/d7fa2wq-cf60174b-9a41-44de-bb2f-605cde85dad5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZTc3ODFlMjUtM2JmNS00MTg1LWFhZDctZWM5M2QwYjVlMWIwXC9kN2ZhMndxLWNmNjAxNzRiLTlhNDEtNDRkZS1iYjJmLTYwNWNkZTg1ZGFkNS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.XxbrI-l9qjsWtCn9pekhSbMq6ZVaGyMiqaeQdJCEF14");
+    background-size: cover;
+    border-radius: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 275px;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+a{
+    margin-bottom: 60px;
+}
+#btnbox {
+    display: flex;
+    flex-direction: row;
+}
